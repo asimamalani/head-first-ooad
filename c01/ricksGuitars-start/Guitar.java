@@ -3,9 +3,8 @@ public class Guitar {
   private String serialNumber, builder, model, type, backWood, topWood;
   private double price;
 
-  public Guitar(String serialNumber, double price,
-                String builder, String model, String type,
-                String backWood, String topWood) {
+  public Guitar(String serialNumber, double price, String builder, String model, String type, String backWood,
+      String topWood) {
     this.serialNumber = serialNumber;
     this.price = price;
     this.builder = builder;
@@ -22,21 +21,27 @@ public class Guitar {
   public double getPrice() {
     return price;
   }
+
   public void setPrice(float newPrice) {
     this.price = newPrice;
   }
+
   public String getBuilder() {
     return builder;
   }
+
   public String getModel() {
     return model;
   }
+
   public String getType() {
     return type;
   }
+
   public String getBackWood() {
     return backWood;
   }
+
   public String getTopWood() {
     return topWood;
   }

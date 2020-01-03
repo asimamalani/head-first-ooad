@@ -1,3 +1,6 @@
+import java.util.Timer;
+import java.util.TimerTask;
+
 public class Remote {
 
   private DogDoor door;
@@ -13,5 +16,15 @@ public class Remote {
     } else {
       door.open();
     }
+
+    Timer timer = new Timer();
+    timer.schedule(new TimerTask() {
+
+      @Override
+      public void run() {
+        door.close();
+        timer.cancel();
+      }
+    }, 5000);
   }
 }

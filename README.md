@@ -1,2 +1,1 @@
-# head-first-ooad
-Head First Object Oriented Analysis and Design Exercises
+# Head First Object Oriented Analysis and Design Exercises
